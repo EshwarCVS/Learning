@@ -4,7 +4,7 @@ public:
         if(nums.size() < 2){return nums.size();}
         auto head=nums.begin();
         auto it=nums.begin();
-        int temp, i=1;
+        int i=1;
         while(it<nums.end()){
             if(*head == *it){
                 it++;              
