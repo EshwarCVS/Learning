@@ -29,7 +29,7 @@ class Solution {
 public:
     void reverse(vector<int>& s, int head, int tail){
       while(head < tail && head != tail){
-        char temp =s[head];
+        int temp =s[head];
         s[head]=s[tail];
         s[tail]=temp;
         head++;
