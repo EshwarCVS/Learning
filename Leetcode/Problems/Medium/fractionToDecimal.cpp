@@ -5,14 +5,13 @@ public:
     string fractionToDecimal(int numerator, int denominator) {
         if(numerator == 0)  return "0";
         vector <char> ans;
-        if(numerator < 0 && denominator > 0 || numerator > 0 && denominator < 0)ans.push_back('-');
-        long divisor = labs(numerator);
-        long dividend = labs(denominator);
-        long remainder = divisor % dividend;
-        string x = to_string(divisor/dividend);
-        for(int i = 0; i < x.size(); i++){
-            ans.push_back(x[i]);
-        }
+        if(numerator < 0 && denominator > 0 || numerator > 0 && denominator < 0)    ans.push_back('-');
+        long dividend = labs(numerator);
+        long divisor = labs(denominator);
+        long remainder = dividend % divisor;
+        string inter = to_string(dividend/divisor);
+        for(int i = 0; i < inter.size(); i++)
+            ans.push_back(inter[i]);
         if(remainder == 0)
             return string(ans.begin(), ans.end());
         ans.push_back('.');
