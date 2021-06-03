@@ -3,7 +3,7 @@ class Solution:
         # Kadane's algorithm
         if(len(nums) <= 1):
             return nums[0]
-        max_so_far = 0
+        max_so_far = min(nums)
         max_ending = 0
         for i in nums:
             max_ending = max_ending + i
