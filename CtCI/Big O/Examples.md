@@ -96,4 +96,123 @@ The following code reverses an array. What is its runtime?
 
 - This algorithm runs in O( N) time.
 
+[Example 8](https://github.com/EshwarCVS/Learning/blob/master/CtCI/Big%20O/Important%20Example%208.md)
 
+The following simple code sums the values of all the nodes in a balanced binary search tree. What is its runtime?
+
+    int sum(Node node) {
+        if (node == nUll) {
+            return a;
+        }
+        return sum(node . left) + node. value + sum(node.right);
+    }
+    
+- The most straightforward way is to think about what this means. This code touches each node in the tree once and does a constant time amount of work with each "touch" (excluding the recursive calls). Therefore, the runtime will be linear in terms of the number of nodes. If there are N nodes, then the runtime is O(N).
+
+What is the time complexity of this function?
+
+    boolean isPrime(int n) {
+        for (int x = 2; x * x (= n; x++) {
+            if (n % x == El) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+- This runs in 0 (n ^ (1/2)) time
+
+The following code computes n! (n factorial). What is its time complexity?
+
+    int factorial(int n) {
+        if(n < 0){
+            return -1j
+        } else if (n == 0) {
+            return 1;
+        } else {
+            return n * factorial(n - l);
+        }
+    }
+
+- This is just a straight recursion from n to n -1 to n - 2 down to 1. It will take O(n) time
+
+This code counts all permutations of a string.
+
+    void permutation(String str) {
+        permutation(str, "")j
+    }
+    void permutation(String str, String prefix) {
+        if (str.length() == 0) {
+            System.out.println(prefix);
+        } else {
+            for (int i = 0; i < str.length(); i++) {
+                String rem = str.substring(0, i) + str.substring(i + 1);
+                permutation(rem, prefix + str.charAt(i));
+            }
+        }
+    }
+
+- Since we are calling permutat ion O(n * n!) times (as an upper bound), and each one takes O(n) time, the total runtime will not exceed O( n2 * n!)
+
+The following code computes the Nth Fibonacci number.
+
+    int fib(int n) {
+        if (n <= 0) return 0;
+        else if (n == 1) return 1;
+        return fib(n - 1) + fib(n - 2);
+    } 
+    
+- There are 2 branches per call, and we go as deep as N, therefore the runtime is O(2^N)
+
+The following code prints all Fibonacci numbers from 0 to n. What is its time complexity?
+
+    void allFib(int n) {
+        for (int i = 0; i < n; i++) {
+            System.out.println(i + ": » + fib(i));
+        }
+    }
+    
+    int fib(int n) {
+        if (n <= 0) return 0;
+        else if (n == 1) return 1;
+        return fib(n - 1) + fib(n - 2);
+    }
+    
+- Many people will rush to concluding that since fib(n) takes O(2^n) time and it's called n times, then it's O(n2^n)
+
+The following code prints all Fibonacci numbers from 0 to n. However, this time, it stores (Le., caches) previously computed values in an integer array. If it has already been computed, it just returns the cache. What is its runtime?
+
+    void allFib(int n) {
+        int[] memo = new int[n + 1];
+        for (int i = e; i < n; i++) {
+            System.out.println(i + ": » + fib(i, memo));
+        }
+    }
+
+    int fib(int n, int[] memo) {
+        if (n <= 0) return 0;
+        else if (n == 1) return 1;
+        else if (memo[n] > 0) return memo[n];
+        memo[n] = fib(n - 1, memo) + fib(n - 2, memo); 
+        return memo[n];
+    } 
+    
+- Doing a constant amount of work N times, so this is O(n) time. This technique, called memoization, is a very common one to optimize exponential time recursive algorithms
+
+The following function prints the powers of 2 from 1 through n (inclusive). For example, if n is 4, it would print 1,2, and 4. What is its runtime?
+
+    int powersOf2(int n) {
+        if (n < 1) {
+            return 0;
+        } else if (n == 1) {
+            System.out.println(l);
+            return 1;
+        } else {
+            int prev = powersOf2(n / 2);
+            int curr = prev * 2;
+            System.out.println(curr);
+            return curr;
+        }
+    } 
+    
+- The number of times we can halve n until we get 1 is O(log n)
