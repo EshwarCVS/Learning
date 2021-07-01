@@ -16,3 +16,7 @@ Day - 2
 - Leetcode - [56. Merge Intervals](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/merge.py)
 - Leetcode - [287. Find the Duplicate Number](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/findDuplicate.py)
 - Leetcode - [73. Set Matrix Zeroes](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/setZeroes.py)
+
+Day - 3
+- Leetcode - [3. Longest Substring Without Repeating Characters](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/lengthOfLongestSubstring.py))
+-Leetcode - 

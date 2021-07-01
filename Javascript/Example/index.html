@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <input type='text' id='idea' />
+        <button id="insert-btn" onClick="increment()">Insert</button>
+        <ul>
+        </ul>
+        <script>
+            function increment(){
+                var formElement = document.getElementById("idea")
+                if (formElement.value.match(/^[0-9]+$/)) {
+                    var formElement = document.getElementById("idea")
+                    var node = document.createElement('li');
+                    node.appendChild(document.createTextNode(formElement.value));
+                    document.querySelector('ul').appendChild(node);
+                    reset()
+                }
+                else{
+                    alert("Please provide valid input");
+                }
+            }
+            function reset(){
+                document.getElementById("idea").value = '';
+            }
+        </script>
+    </body>
+</html>

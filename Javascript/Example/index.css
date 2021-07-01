@@ -1,0 +1,9 @@
+body{
+    color: black;
+}
+li{
+    color: black;
+}
+li:nth-child(3n) {
+    color: red;
+}
