@@ -1,8 +1,6 @@
 package Aone;
 
 import java.util.*;
-import java.io.*;
-import java.lang.*;
 
 //If no other cities share an x or y coordinate, return null
 public class nearest {

@@ -15,11 +15,6 @@ Hard - 1
 - Leetcode - [287. Find the Duplicate Number](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/findDuplicate.py)
 - Leetcode - [73. Set Matrix Zeroes](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/setZeroes.py)
 
-<<<<<<< HEAD
-Day - 3
-- Leetcode - [3. Longest Substring Without Repeating Characters](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/lengthOfLongestSubstring.py))
--Leetcode - 
-=======
 - Leetcode - [3. Longest Substring Without Repeating Characters](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/lengthOfLongestSubstring.py)
 - Leetcode - [1. Two Sum](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Easy/twoSum.py)
 - Leetcode - [5. Longest Palindromic Substring](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/longestPalindrome.py)
@@ -31,4 +26,3 @@ Day - 3
 - Leetcode - [23. Merge k Sorted Lists](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Hard/merge2Lists.py)
 - Leetcode - [33. Search in Rotated Sorted Array](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/search.py)
 - Leetcode - [153. Find Minimum in Rotated Sorted Array](https://github.com/EshwarCVS/Learning/blob/master/Leetcode/Problems/Medium/findMin.py)
->>>>>>> 467483a58ee1c5231d9b5ec0a3e056ae31d00a99
